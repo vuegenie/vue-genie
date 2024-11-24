@@ -16,7 +16,8 @@
 
 <script lang="ts" setup>
 import { defineComponent, ref } from "vue";
-import { GDataTable } from "./../dist/vue-genie.es";
+// @ts-ignore
+import { GDataTable } from "@dist/vue-genie.es";
 import HelloWorld from "./components/HelloWorld.vue";
 
 defineComponent({
