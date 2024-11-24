@@ -1,19 +1,19 @@
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
   plugins: [vue()],
   build: {
     lib: {
-      entry: 'src/index.js',
-      name: 'VueGenie',
+      entry: "src/main.ts",
+      name: "VueGenie",
       fileName: (format) => `vue-genie.${format}.js`,
     },
     rollupOptions: {
-      external: ['vue'],
+      external: ["vue"],
       output: {
         globals: {
-          vue: 'Vue',
+          vue: "Vue",
         },
       },
     },
